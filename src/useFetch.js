@@ -6,7 +6,9 @@ const useFetch = (url) => {
     const [error, setError] = useState(null);
 
     useEffect(() => {
-        fetch(url)
+        const abortCont =  new AbortController();  
+
+        fetch(url, { signal: abortCont.signal })
           .then(res => {
             if(!res.ok){ //burdaki ok degeri res'ten geliyor yani kendi degiskeni
               // eger ok true degilse yani baglanamiyorsa fetch'te burda erroru yakaliyoruz
@@ -20,9 +22,16 @@ const useFetch = (url) => {
             setError(null);
           })
           .catch(error => {
-            setIsPending(false);
-            setError(error.message);
+            if (error.name === 'AbortError'){
+              console.log("catched");
+            }
+            else {
+              setIsPending(false);
+              setError(error.message);  
+            }
           })
+
+        return () => abortCont.abort();
       }, [url]) // this [] is allow just apply on first reload 
     
     return {data, isPending, error}

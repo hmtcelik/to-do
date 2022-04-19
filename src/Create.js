@@ -1,6 +1,6 @@
 const Create = () => {
     return (
-        <div className="create"> hello worlds</div>
+        <div className="create"> Create a New Todo</div>
     );
 }
  
