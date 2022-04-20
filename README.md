@@ -1,2 +1,4 @@
-# (still processing)
-to-do app in ReactJS
+# to-do
+> built with ReactJS
+
+preview = https://hmtcelik.github.io/to-do/
