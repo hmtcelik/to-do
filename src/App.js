@@ -3,6 +3,7 @@ import Home from './Home';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 import Create from './Create';
 import TodoDetails from './TodoDetails';
+import Four0Four from './404';
 
 function App() {
   return (
@@ -19,7 +20,10 @@ function App() {
           </Route>
           <Route exact path="/todo/:id">
             <TodoDetails />
-          </Route>        
+          </Route>
+          <Route path="*">
+            <Four0Four />
+          </Route> 
         </Switch>
       </div>
     </div>

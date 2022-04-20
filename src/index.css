@@ -102,3 +102,8 @@
   border-radius: 8px;
   cursor: pointer;
 }
+
+.empty-message{
+  margin-top: 30px;
+  padding: 1px;
+}

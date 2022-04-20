@@ -16,14 +16,13 @@ const Create = () => {
 
         fetch('http://localhost:9000/blogs/', {
             method: 'POST',
-            headers: { 'Content-Type':'application/json'},
+            headers: { 'Content-Type':'application/json' },
             body: JSON.stringify(todo)
         }).then(() => {
             setIsPending(false);
             //lastPages.go(-1); //going last page (-1)
             lastPages.push('/') //redirect to '/'
         });
-
     }
 
     return (
