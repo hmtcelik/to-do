@@ -8,7 +8,7 @@ const TodoList = ({todos, title, deleteFunc }) => {
             <div className="blog-preview" key={todo.id}>
                 <span className="delete-button-show"><a className="delete-button" onClick={() => deleteFunc(todo.id)}>x</a></span>                
                 <h2>{ todo.title }</h2>
-                <p>Written by { todo.body }</p>
+                <p>{ todo.body }</p>
             </div>
         ))}
             {!isAnyTodo && <p className="empty-message">Wow! It's such an empty</p>}
