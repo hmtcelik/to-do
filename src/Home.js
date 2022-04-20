@@ -1,15 +1,19 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import TodoList from "./TodoList";
-import useFetch from "./useFetch";
 
 const Home = () => {
-  const { data: todos, isPending, error} = useFetch('http://localhost:9000/blogs')
+  const [ todos, setTodos] = useState([
+    {title: 'My First Task', body:'Yeah! This is my first task', id:1}
+  ]);
+
+  const handleDelete = (id) => {
+    const newTodos = todos.filter(todo => todo.id !== id);
+    setTodos(newTodos);
+  }
 
   return (
     <div className="home">
-      { error && <div>{ error }</div> }
-      { isPending && <div>Loading...</div> }
-      { todos && <TodoList todos={todos} title="Your Tasks!"/> }
+      { todos && <TodoList todos={todos} title="Your Tasks!" deleteFunc={handleDelete}/> }
     </div>
   );
 }

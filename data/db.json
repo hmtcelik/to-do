@@ -1,3 +1,16 @@
 {
-  "blogs": []
+  "todos": [
+    {
+      "title": "qwd",
+      "body": "qwd",
+      "auth": "User2",
+      "id": 1
+    },
+    {
+      "title": "qdqw",
+      "body": "dwqdq",
+      "auth": "User2",
+      "id": 2
+    }
+  ]
 }
