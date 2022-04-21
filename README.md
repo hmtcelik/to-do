@@ -4,7 +4,11 @@
 > preview = https://hmtcelik.github.io/to-do/
 
 ## In App
-<img src="/public/ss3-todo.png">
+<p align="center">
+  <img src="/public/ss3-todo.png">
+</p>
 
-#### Creating Task:
-<img src="/public/ss2-todo.png">
+<h4 align="center">Creating Task:</h4>
+<p align="center";>
+  <img src="/public/ss2-todo.png">
+</p>
