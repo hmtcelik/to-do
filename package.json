@@ -1,7 +1,7 @@
 {
   "name": "to-do",
   "version": "0.1.0",
-  "homepage": "https://hmtcelik.github.io/to-do", 
+  "homepage": "https://hmtcelik.github.io/to-do",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.6",
@@ -11,7 +11,8 @@
     "react-dom": "^17.0.1",
     "react-router-dom": "^5.3.0",
     "react-scripts": "4.0.1",
-    "web-vitals": "^0.2.4"
+    "web-vitals": "^0.2.4",
+    "yarn": "^1.22.18"
   },
   "scripts": {
     "predeploy": "npm run build",
