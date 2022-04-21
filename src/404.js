@@ -5,7 +5,7 @@ const Four0Four = () => {
         <div className="four0four">
             <h3>404!</h3>
             <p>This page is not exist</p>
-            <Link to='/'>Go Home...</Link>
+            <Link to='/to-do'>Go Home...</Link>
         </div>
     );
 }

@@ -10,7 +10,7 @@ function App() {
       <Navbar />
       <div className="content">
         <Switch>
-          <Route exact path="/"> {/* exact is very important  */}
+          <Route exact path="/to-do"> {/* exact is very important  */}
             <Home />
           </Route>
           <Route path="*">
